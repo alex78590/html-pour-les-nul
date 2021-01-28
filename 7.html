@@ -1,0 +1,48 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+
+        <style>
+            .ip {
+                min-width: 100px;
+            }
+        
+            form {
+                display: inline-block;
+            }
+        
+            .dv {
+                float: left;
+                clear: left;
+                width: 100%;
+                padding-bottom: 1em;
+            }
+        
+            .lb {
+                float: left;
+                width: 10em;
+                margin-right: 1em;
+                text-align: right;
+            }
+        
+            .rdio {
+                display: block;
+                vertical-align: middle;
+            }
+        </style>
+        
+        <form action="http://univcergy.phpnet.org/CCI/animal.php" method="POST">
+            <b><p text align="center">A la recherche des animaux</p></b>
+            <div class="dv">
+                <label class="lb" for="animal">Nom de l'animal : </label>
+                <input class="ip" type="text" name="animal" id="animal" required>
+            </div>
+
+            <div class="dv" style="text-align: center;">
+                <input class="btn btn-success btn-lg" type="submit" value="Chercher">
+            </div>
+            <p>la girafe est pas bien dimensionné!</p>
+    </body>
+</html>
