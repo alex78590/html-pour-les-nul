@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <style>
+        table, th, td {
+          border: 1px solid black;
+        }
+        </style>
+
+    <script>
+        function fonction1(){
+        var numérique = 1
+        document.write(numérique)
+
+        var str = "str"
+        document.write(str)
+
+        document.write(numérique+str)
+
+        document.write("<table>"
+            + "<tr><td>"+str+"</td>"
+            + "<td>"+numérique+"</td>"
+            + "<td>"+numérique+"</td></tr>"
+            + "<tr><td>"+numérique+"</td>"
+            + "<td>"+str+"</td>"
+            + "<td>"+str+"</td></tr>"
+            + "</table>")}
+        
+        fonction1()
+
+        function fonction2(str){
+            document.write(str)
+        }
+        fonction2("bonjour")
+
+        function fonction3(val1,val2,val3,val4){
+            document.write("<table>"
+            + "<tr><td>"+val1+"</td>"
+            + "<td>"+val2+"</td></tr>"
+            + "<tr><td>"+val3+"</td>"
+            + "<td>"+val4+"</td></tr>"
+            + "</table>")
+        }
+        fonction3("val1","val2","val3","val4")
+    </script>
+  
+</body>
+</html>
