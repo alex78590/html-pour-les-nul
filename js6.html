@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+    
+    <script>
+   function copyContent(content, to) {
+   var receiver = document.getElementById(to);
+   receiver.value = content;
+}
+
+function pays(sel) {
+  var e= document.getElementById("pays")
+  var result = e.options[e.selectedIndex].value
+  document.write("<input type =\"text\"value="+result+">")
+}
+
+    pasy()
+    </script>
+    <input type="text" id="text01" onchange="copyContent(this.value, 'text02');" />
+    <input type="text" id="text02" />
+
+    <select id="pays" onChange="pays(this);">
+        <option value="paris">france</option>
+        <option value="madrid">espagne</option>
+        <option value="norvege">oslo</option>
+      </select>
+</body>
+</html>
