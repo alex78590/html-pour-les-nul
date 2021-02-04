@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <style>
+        table, th, td {
+          border: 1px solid black;
+        }
+        </style>
+    <script>
+     function testNum(a) {
+  var result;
+  if (a > 10) {
+    result = 'sup a 10';
+  } else {
+    result = 'inf a 10';
+  }
+  document.write(result);
+}
+    testNum(11)
+
+    function bouclefor(){
+        var result = ''
+        for (var i=0; i<9;i++){
+        result += i
+        }
+        document.write(result)
+    }
+
+    bouclefor()
+
+
+    function tableau(){
+        var result = ''
+        document.write("<table>")
+        for (var i=0; i<10;i++){
+        document.write("<tr>")
+            for (var j =0; j<10;j++){
+            document.write("<td>"+j+","+i)
+            }
+        }
+        document.write("</table>")
+       
+    }
+
+    tableau()
+    </script>
+</body>
+</html>
