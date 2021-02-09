@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<body>
+    
+    <script>
+   function copyContent(content, to) {
+   var receiver = document.getElementById(to);
+   receiver.value = content;
+}
+
+function pays() {
+  var e= document.getElementById("pays")
+  var result = e.options[e.selectedIndex].value
+  document.write("<input type =\"text\"value="+result+">")
+}
+
+function testqcm() {
+  var total = 0
+  var elements = document.querySelectorAll('input[type="radio"]:checked')
+  for (var i = 0, elem; elem = elements[i++];){
+  if (elem.value == 1){
+    total+=1
+  }
+  
+  }
+  alert(total)
+}
+    </script>
+    <input type="text" id="text01" onchange="copyContent(this.value, 'text02');" />
+    <input type="text" id="text02" />
+
+    <select id="pays" onchange="pays(this);">
+        <option value="paris">france</option>
+        <option value="madrid">espagne</option>
+        <option value="norvege">oslo</option>
+      </select>
+
+      <form name="qcm" id="qcm">
+        <p>t'as combien de doigt?</p>
+        <input type="radio" name="q1" value="0">1
+        <input type="radio" name="q1" value="1">5
+        <input type="radio" name="q1" value="0">3
+       
+        <p>1+1?</p>
+        <input type="radio" name="q2" value="0">1
+        <input type="radio" name="q2" value="0">3
+        <input type="radio" name="q2" value="1">2
+        
+
+        <p>longueur de ma main</p>
+        <input type="radio" name="q3" value="1">200m
+        <input type="radio" name="q3" value="0">3mm
+        <input type="radio" name="q3" value="0">2cm
+        
+      
+      <button onclick="testqcm()">resultat</button>
+      
+    </form>
+</body>
+
+
+</html>
